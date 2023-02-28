@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Big+Shoulders+Inline_Text&display=swap");
 :root {
     --swiper-navigation-color: #73e713;
     --swiper-theme-color: #ef233c;
@@ -9,6 +9,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Nanum Gothic", sans-serif;
+}
+#logo{
+    font-family: 'Big Shoulders Inline Text', cursive;
 }
 .swiper-slide {
     display: flex;
