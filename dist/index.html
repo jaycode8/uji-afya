@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uji afya</title>
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="w-full h-auto">
+        <div class="w-full h-14 bg-primary sticky top-0 left-0 z-10 grid place-items-center">
+            <a href="#" class="text-white absolute left-10 text-xl cursor-pointer">
+                <h4>uji<span class="text-red-500 font-bold">AFYA</span></h4>
+            </a>
+            <nav class="text-white flex place-items-center justify-center gap-5 absolute right-5">
+                <ul class="menulist capitalize block sm:flex text-xl sm:text-md absolute top-8 -right-64 sm:right-0 sm:relative sm:top-px bg-primary sm:bg-transparent py-5 px-4 transition-all ease-in-out duration-500" id="menu">
+                    <li class="link"><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li class="link"><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li class="link"><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+                    <li class="link"><a href="#location" onclick="toggleMenu()">location</a></li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 block cursor-pointer sm:hidden" onclick="toggleMenu()">
+                    <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                </svg>
+            </nav>
+        </div>
+        <div class="w-full h-screen flex place-items-center bg-slate-500 -mt-14" id="home">
+            <div class="swiper mySwiper w-95 h-95 sm:w-90 sm:h-90">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="w-full h-auto grid sm:grid-cols-2 sm:py-12">
+                <section class="w-full h-full grid place-items-center py-4">
+                    <div class="w-90 sm:w-3/4 h-64 sm:h-80 rounded-lg overflow-hidden">
+                        <div class="swiper mySwiper w-full h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide rounded-sm sm:rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img.jpeg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img1.jpeg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img2.jpg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img3.jpg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img4.jpg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/img5.jpg" alt="img" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="w-full h-full grid place-items-center py-4">
+                    <div class="w-36 h-36 my-8 rotate-45 rounded-xl shadow-2xl overflow-hidden relative cursor-pointer">
+                        <div class="w-140 h-140 -translate-x-1/2 -translate-y-1/2 -rotate-45 absolute top-1/2 left-1/2">
+                            <img src="./imgs/jacky.jpg" alt="jacky" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-90 sm:w-3/4 grid gap-4">
+                        <p>
+                            Uji afya is a delightful blend of flavors, nutrition and cultural heritage, offering a taste of 
+                            East Africa's culinary traditions while providing a nourishing and satisfying experience.
+                        </p>
+                        <p>
+                            Visit our premises in the shown <a href="#location" class="italic text-blue-600"><strong>location</strong></a> to enjoy the famous uji afya and other various foods that we offer. 
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="w-full h-auto grid sm:grid-cols-2">
+                <section class="w-full h-full grid place-items-center">
+                    <div class="w-90 sm:w-3/4 grid gap-4 sm:py-5">
+                        <p>
+                            In our menu we also provide the sweet enticing hearty and versatile arrowroots alias <strong class="italic">nduma.</strong>
+                        </p>
+                        <p>
+                            Come and sovor the warmth and cormforting aroma of our carefully selecting tea accompanied by sweetpotatoes
+                            making a true <strong class="italic">African meal.</strong> 
+                        </p>
+                        <p>
+                            <strong class="italic">Karibuni nyote! hapa twawapenda wateja wetu...</strong>
+                        </p>
+                    </div>
+                </section>
+                <!-- <section class="w-full h-full grid place-items-center p-2 px-4">
+                    <div>
+                        <div class="swiper mySwiper w-full h-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                <img src="./imgs/nduma.jpg" alt="nduma" class="w-full h-full object-cover rounded-md cursor-pointer">
+                            </div>
+                            <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                <img src="./imgs/chai.jpeg" alt="chai" class="w-full h-full object-cover rounded-md cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </section> -->
+                <section class="w-full h-full grid place-items-center p-2 px-4">
+                    <div class="w-full h-full rounded-lg overflow-hidden">
+                        <div class="swiper mySwiper w-full h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide rounded-sm sm:rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/nduma.jpg" alt="nduma" class="w-full h-full object-cover">
+                                </div>
+                                <div class="swiper-slide rounded-sm overflow-hidden cursor-pointer">
+                                    <img src="./imgs/chai.jpeg" alt="chai" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="contacts" class="w-full h-full grid place-items-center py-6 px-4">
+            <section class="w-full h-full grid place-items-center gap-4 pt-8">
+                <h3 class="text-2xl font-bold">Reach us</h3>
+                <div class="grid place-items-center gap-12 sm:grid-cols-3 py-4">
+                    <a class="card" href="#location">
+                        <span class="grid place-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            <h4 class="font-bold">Address</h4>
+                            <p>The Dream House building</p>
+                        </span>
+                    </a>
+                    <a class="card" href="tel:+254 793633579">
+                        <span class="grid place-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                            </svg>
+                            <h4 class="font-bold">Call Us</h4>
+                            <p>+254 793633579</p>
+                        </span>
+                    </a>
+                    <a class="card" href="https://wa.me/+254793633579">
+                        <span class="grid place-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> 
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> 
+                            </svg>
+                            <h4 class="font-bold">WhatsApp Us</h4>
+                            <p>+254 793633579</p>
+                        </span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div id="location" class="w-full h-full grid place-items-center py-6 px-4 sm:gap-4">
+            <div class="w-full h-80 sm:h-130 grid place-items-center py-6 overflow-hidden cursor-pointer">
+                <img src="./imgs/location.jpg" alt="dream house" class="w-full h-full object-cover ">
+            </div>
+            <section class="w-full h-80 grid place-items-center">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d871.5929131494433!2d37.62580307484777!3d-1.7802943586808544!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwNDYnNDkuMiJTIDM3wrAzNyczMy45IkU!5e1!3m2!1sen!2ske!4v1689621954893!5m2!1sen!2ske" 
+                    class="w-full h-full" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+
+        <footer class="w-full h-28 bg-primary text-white grid place-items-center">
+            <div class="grid place-items-center gap-4">
+                <p>&copy; <span id="date"></span> <a href='#' class="italic"> uji<span class="text-red-500 font-bold">AFYA</span> </a>| All Rights Reserved.</p>
+                <p>made with <span>❤️</span> by <a href='https://jamesmumo-cf8e5.web.app' target='_blank'><strong class="italic text-blue-600"> Jaymoh </strong></a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
