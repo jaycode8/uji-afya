@@ -1,4 +1,4 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 const wrapper = document.querySelector('.swiper-wrapper');
 const menu = document.getElementById('menu');
 const datepara = document.getElementById('date');
@@ -60,9 +60,9 @@ pagesData.map((infor, index) => {
 const toggleMenu = () => {
     if (menu.classList.contains('-right-64')) {
         menu.classList.remove('-right-64');
-        menu.classList.add('-right-4');
+        menu.classList.add('active');
     } else {
-        menu.classList.remove('-right-4');
+        menu.classList.remove('active');
         menu.classList.add('-right-64');
     }
 };

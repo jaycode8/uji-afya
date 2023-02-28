@@ -40,10 +40,8 @@
 .icons{
     display: none !important;
 }
+.active{
+    right: 0;
+}
 
 
-/* @media screen and(max-width: 640px) {
-    .menulist.active{
-        display:none !important
-    }
-} */
