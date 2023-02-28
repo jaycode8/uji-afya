@@ -1,4 +1,4 @@
-
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 const wrapper = document.querySelector('.swiper-wrapper');
 const menu = document.getElementById('menu');
 const datepara = document.getElementById('date');
