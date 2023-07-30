@@ -61,11 +61,11 @@ const toggleMenu = () => {
     if (menu.classList.contains('-right-64')) {
         menu.classList.remove('-right-64');
         menu.classList.add('active');
-        alert('activated')
+        // alert('activated')
     } else {
         menu.classList.remove('active');
         menu.classList.add('-right-64');
-        alert('deactivated')
+        // alert('deactivated')
     }
 };
 
